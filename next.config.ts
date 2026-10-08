@@ -4,7 +4,9 @@ const nextConfig: NextConfig = {
   // Keep old Squarespace URLs working
   async redirects() {
     return [
-      { source: "/humannature", destination: "/video", permanent: true },
+      { source: "/humannature", destination: "/motion", permanent: true },
+      { source: "/video", destination: "/motion", permanent: true },
+      { source: "/graphic", destination: "/graphics", permanent: true },
       { source: "/gallerymh", destination: "/mh", permanent: true },
       { source: "/new-page", destination: "/contact", permanent: true },
       // Product Styling moved to its own site
