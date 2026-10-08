@@ -6,7 +6,8 @@ import Reveal from "./Reveal";
 import thumbs from "@/data/videoThumbs.json";
 
 const localThumbs = thumbs as Record<string, "lb" | "wide">;
-const thumbOf = (id: string) => (localThumbs[id] ? `/videos/${id}.jpg` : `https://i.ytimg.com/vi/${id}/hqdefault.jpg`);
+const base = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+const thumbOf = (id: string) => (localThumbs[id] ? `${base}/videos/${id}.jpg` : `https://i.ytimg.com/vi/${id}/hqdefault.jpg`);
 
 export default function VideoGrid({ items }: { items: Video[] }) {
   const [active, setActive] = useState<Video | null>(null);
@@ -46,7 +47,12 @@ export default function VideoGrid({ items }: { items: Video[] }) {
               allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
               allowFullScreen
             />
-            <p className="lb-caption">{active.title}</p>
+            <p className="lb-caption">
+              {active.title}
+              <a href={`https://www.youtube.com/watch?v=${active.id}`} target="_blank" rel="noopener noreferrer" className="lb-yt">
+                Watch on YouTube ↗
+              </a>
+            </p>
           </div>
           <button className="lb-close" aria-label="閉じる" onClick={() => setActive(null)}>Close</button>
         </div>
