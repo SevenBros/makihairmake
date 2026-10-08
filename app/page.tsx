@@ -7,9 +7,9 @@ const g = (n: number) => `/photos/graphic/graphic-${String(n).padStart(3, "0")}.
 const heroImages = [g(30), g(2), g(6), g(33), g(14), g(3)];
 
 const sections = [
-  { href: "/graphic", label: "Graphic", cover: photos.graphic[29].thumb },
-  { href: "/video", label: "Video", cover: photos.mh[11].thumb },
-  { href: "/mh", label: "MH", cover: photos.mh[5].thumb },
+  { href: "/graphic", label: "Graphic", cover: photos.graphic[1].thumb, pos: "50% 20%" },
+  { href: "/video", label: "Video", cover: photos.mh[11].thumb, pos: "50% 50%" },
+  { href: "/mh", label: "MH", cover: photos.mh[5].thumb, pos: "50% 50%" },
 ];
 
 export default function Home() {
@@ -30,7 +30,7 @@ export default function Home() {
         {sections.map((s) => (
           <Link key={s.href} href={s.href} className="index-card rv">
             <span className="index-img">
-              <img src={s.cover} alt="" loading="lazy" />
+              <img src={s.cover} alt="" loading="lazy" style={{ objectPosition: s.pos }} />
             </span>
             <span className="index-row">
               <span className="index-label">{s.label}</span>
