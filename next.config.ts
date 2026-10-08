@@ -6,7 +6,8 @@ const nextConfig: NextConfig = {
     return [
       { source: "/humannature", destination: "/motion", permanent: true },
       { source: "/video", destination: "/motion", permanent: true },
-      { source: "/graphic", destination: "/graphics", permanent: true },
+      { source: "/graphic", destination: "/stills", permanent: true },
+      { source: "/graphics", destination: "/stills", permanent: true },
       { source: "/gallerymh", destination: "/mh", permanent: true },
       { source: "/new-page", destination: "/contact", permanent: true },
       // Product Styling moved to its own site
