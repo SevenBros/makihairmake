@@ -9,7 +9,7 @@ const heroImages = [g(30), g(2), g(6), g(33), g(14), g(3)];
 
 const sections = [
   { href: "/graphic", no: "01", label: "Graphic", count: photos.graphic.length, cover: photos.graphic[29].thumb },
-  { href: "/video", no: "02", label: "Video", count: videos.length, cover: `https://i.ytimg.com/vi/${videos[0].id}/hqdefault.jpg` },
+  { href: "/video", no: "02", label: "Video", count: videos.length, cover: photos.mh[11].thumb },
   { href: "/product-styling", no: "03", label: "Product Styling", count: photos.product.length, cover: photos.product[12].thumb },
   { href: "/mh", no: "04", label: "MH", count: photos.mh.length, cover: photos.mh[5].thumb },
 ];
