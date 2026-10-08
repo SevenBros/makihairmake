@@ -9,6 +9,6 @@ export const site = {
 export const nav = [
   { href: "/stills", label: "Stills" },
   { href: "/motion", label: "Motion" },
-  { href: "/mh", label: "MH" },
+  { href: "/grooming", label: "Grooming" },
   { href: "/contact", label: "Contact" },
 ];

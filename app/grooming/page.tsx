@@ -3,13 +3,13 @@ import Gallery from "@/components/Gallery";
 import PageHead from "@/components/PageHead";
 import { photos } from "@/data/photos";
 
-export const metadata: Metadata = { title: "MH" };
+export const metadata: Metadata = { title: "Grooming" };
 
 export default function Page() {
   return (
     <div className="wrap">
-      <PageHead title="MH" count={photos.mh.length} />
-      <Gallery items={photos.mh} label="MH" />
+      <PageHead title="Grooming" count={photos.mh.length} note="Talent · Athletes · Artists" />
+      <Gallery items={photos.mh} label="Grooming" />
     </div>
   );
 }

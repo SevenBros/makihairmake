@@ -8,7 +8,7 @@ const heroImage = "/photos/graphic/graphic-003.jpg";
 const sections = [
   { href: "/stills", label: "Stills", cover: photos.graphic[1].thumb, pos: "50% 20%", zoom: 1.12 },
   { href: "/motion", label: "Motion", cover: photos.mh[11].thumb, pos: "50% 50%" },
-  { href: "/mh", label: "MH", cover: photos.mh[5].thumb, pos: "50% 50%" },
+  { href: "/grooming", label: "Grooming", cover: photos.mh[5].thumb, pos: "50% 50%" },
 ];
 
 export default function Home() {

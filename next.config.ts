@@ -8,7 +8,8 @@ const nextConfig: NextConfig = {
       { source: "/video", destination: "/motion", permanent: true },
       { source: "/graphic", destination: "/stills", permanent: true },
       { source: "/graphics", destination: "/stills", permanent: true },
-      { source: "/gallerymh", destination: "/mh", permanent: true },
+      { source: "/gallerymh", destination: "/grooming", permanent: true },
+      { source: "/mh", destination: "/grooming", permanent: true },
       { source: "/new-page", destination: "/contact", permanent: true },
       // Product Styling moved to its own site
       { source: "/product-styling", destination: "https://makistyling.com", permanent: false },
