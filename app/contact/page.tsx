@@ -5,20 +5,15 @@ export const metadata: Metadata = { title: "Contact" };
 
 export default function Page() {
   return (
-    <div className="wrap contact">
-      <div className="contact-img">
-        <img src="/photos/graphic/graphic-033.jpg" alt="" />
+    <div className="wrap wcontact">
+      <h1 className="eyebrow">Contact</h1>
+      <p className="wcontact-lede">For bookings, availability or any questions, please get in touch. Thank you.</p>
+      <div className="wcontact-lines">
+        <a href={`mailto:${site.email}`}>{site.email}</a>
+        <a href={`tel:+1${site.phone.replace(/-/g, "")}`}>{site.phone}</a>
       </div>
-      <div className="contact-body">
-        <p className="eyebrow">Contact</p>
-        <h1 className="contact-title">
-          Hi there —<br />
-          <em>let&rsquo;s work together.</em>
-        </h1>
-        <p className="contact-lede">
-          Feel free to e-mail me for bookings, availability or any questions. Thank you.
-        </p>
-        <a className="contact-mail" href={`mailto:${site.email}`}>{site.email}</a>
+      <div className="wcontact-img">
+        <img src="/photos/graphic/graphic-033.jpg" alt="" />
       </div>
     </div>
   );
