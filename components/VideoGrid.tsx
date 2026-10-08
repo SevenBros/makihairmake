@@ -27,15 +27,26 @@ export default function VideoGrid({ items }: { items: Video[] }) {
     <>
       <Reveal />
       <div className="vgrid">
-        {items.map((v, i) => (
-          <button key={v.id} className="vcard rv" style={{ transitionDelay: `${(i % 3) * 70}ms` }} onClick={() => setActive(v)}>
+        {items.map((v, i) => {
+          const thumb = (
             <span className={`vthumb${localThumbs[v.id] === "wide" ? " is-wide" : ""}`}>
               <img src={thumbOf(v.id)} alt="" loading={i < 6 ? "eager" : "lazy"} decoding="async" />
-              <span className="vplay" aria-hidden="true" />
+              {!v.hidden && <span className="vplay" aria-hidden="true" />}
             </span>
-            <span className="vtitle">{v.title}</span>
-          </button>
-        ))}
+          );
+          const delay = { transitionDelay: `${(i % 3) * 70}ms` };
+          return v.hidden ? (
+            <div key={v.id} className="vcard is-static rv" style={delay}>
+              {thumb}
+              <span className="vtitle">{v.title}</span>
+            </div>
+          ) : (
+            <button key={v.id} className="vcard rv" style={delay} onClick={() => setActive(v)}>
+              {thumb}
+              <span className="vtitle">{v.title}</span>
+            </button>
+          );
+        })}
       </div>
 
       {active && (

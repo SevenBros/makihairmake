@@ -1,6 +1,6 @@
 // 新しい動画は先頭に追加してください（id = YouTubeのID）
-// hidden: "private" = YouTube上で非公開 / "removed" = YouTubeから削除済み（どちらも再生できないので一覧に出さない）
-// 公開に戻したら hidden を消せば表示されます
+// hidden: "private" = YouTube上で非公開 / "removed" = YouTubeから削除済み
+// 再生できないので、サムネイルとタイトルだけ表示（クリック不可）。公開に戻ったら hidden を消すと再生できます
 export type Video = { id: string; title: string; hidden?: "private" | "removed" };
 
 export const videos: Video[] = [

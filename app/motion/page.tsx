@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import PageHead from "@/components/PageHead";
 import VideoGrid from "@/components/VideoGrid";
-import { visibleVideos as videos } from "@/data/videos";
+import { videos } from "@/data/videos";
 
 export const metadata: Metadata = { title: "Motion" };
 
