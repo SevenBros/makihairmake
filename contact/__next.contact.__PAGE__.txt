@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[97367,["/makihairmake/_next/static/chunks/1xo108j0v9mm6.js","/makihairmake/_next/static/chunks/14mrh2-p_w84d.js"],"OutletBoundary"]
+3:"$Sreact.suspense"
+:HL["/makihairmake/photos/graphic/graphic-056.jpg","image"]
+0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"wrap wcontact","children":[["$","h1",null,{"className":"eyebrow","children":"Contact"}],["$","p",null,{"className":"wcontact-lede","children":"For bookings, availability or any questions, please get in touch. Thank you."}],["$","div",null,{"className":"wcontact-lines","children":[["$","a",null,{"href":"mailto:maki@seven-bros.com","children":"maki@seven-bros.com"}],["$","a",null,{"href":"tel:+12138048899","children":"213-804-8899"}]]}],["$","div",null,{"className":"wcontact-img","children":["$","img",null,{"src":"/makihairmake/photos/graphic/graphic-056.jpg","alt":""}]}]]}],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"t-KycyYiTv9_hbo1PCN3X"}
+4:null
