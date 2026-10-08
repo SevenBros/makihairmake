@@ -13,7 +13,7 @@ export default function Page() {
         <a href={`tel:+1${site.phone.replace(/-/g, "")}`}>{site.phone}</a>
       </div>
       <div className="wcontact-img">
-        <img src="/photos/graphic/graphic-033.jpg" alt="" />
+        <img src="/photos/graphic/graphic-056.jpg" alt="" />
       </div>
     </div>
   );
