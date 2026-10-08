@@ -7,6 +7,8 @@ const nextConfig: NextConfig = {
       { source: "/humannature", destination: "/video", permanent: true },
       { source: "/gallerymh", destination: "/mh", permanent: true },
       { source: "/new-page", destination: "/contact", permanent: true },
+      // Product Styling moved to its own site
+      { source: "/product-styling", destination: "https://makistyling.com", permanent: false },
     ];
   },
 };

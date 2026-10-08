@@ -1,7 +1,7 @@
 """Rebuild public/photos and data/photos.json from the original photos.
 
 Usage:  python3 scripts/build_photos.py "<path to iCloud AI/makihairmake.com/photos>"
-Folders: graphic / product / mh  (files are ordered by file name)
+Folders: graphic / mh  (files are ordered by file name)
 """
 import json, os, shutil, sys
 from PIL import Image, ImageOps
@@ -13,7 +13,7 @@ OUT = os.path.join(ROOT, "public", "photos")
 EXT = (".jpg", ".jpeg", ".png", ".webp", ".tif", ".tiff", ".heic")
 
 manifest = {}
-for cat in ["graphic", "product", "mh"]:
+for cat in ["graphic", "mh"]:
     d = os.path.join(OUT, cat)
     shutil.rmtree(d, ignore_errors=True)
     os.makedirs(d)

@@ -7,7 +7,7 @@ import { site } from "@/data/site";
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: { default: `${site.name} | ${site.role}`, template: `%s | ${site.name}` },
-  description: "Maki Hayashi — makeup and hair artist for advertising, commercials, music videos, editorial and product styling.",
+  description: "Maki Hayashi — makeup and hair artist for advertising, commercials, music videos, and editorial.",
   openGraph: {
     title: `${site.name} | ${site.role}`,
     description: "Makeup and hair for advertising, commercials, music videos and editorial.",
