@@ -13,9 +13,10 @@ export const metadata: Metadata = {
     description: "Makeup and hair for advertising, commercials, music videos and editorial.",
     url: site.url,
     siteName: site.name,
-    images: ["/photos/graphic/graphic-030.jpg"],
+    images: [{ url: "/og.jpg", width: 1200, height: 630 }],
     type: "website",
   },
+  twitter: { card: "summary_large_image", images: ["/og.jpg"] },
 };
 
 export const viewport: Viewport = { themeColor: "#ffffff" };
