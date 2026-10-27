@@ -12,3 +12,6 @@ export const nav = [
   { href: "/grooming", label: "Grooming" },
   { href: "/contact", label: "Contact" },
 ];
+
+// Sister site (opens in a new tab)
+export const styling = { href: "https://www.makistyling.com", label: "Product Styling" };

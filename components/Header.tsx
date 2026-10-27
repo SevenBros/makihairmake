@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { nav, site } from "@/data/site";
+import { nav, site, styling } from "@/data/site";
 
 export default function Header() {
   const pathname = usePathname();
@@ -29,7 +29,15 @@ export default function Header() {
         <span className="hdr-role">{site.role}</span>
       </Link>
       <nav className="hdr-nav" aria-label="Main">
-        {nav.map((n) => (
+        {nav.slice(0, -1).map((n) => (
+          <Link key={n.href} href={n.href} className={pathname === n.href ? "is-active" : ""}>
+            {n.label}
+          </Link>
+        ))}
+        <a href={styling.href} target="_blank" rel="noopener" className="hdr-ext">
+          {styling.label} <span aria-hidden="true">↗</span>
+        </a>
+        {nav.slice(-1).map((n) => (
           <Link key={n.href} href={n.href} className={pathname === n.href ? "is-active" : ""}>
             {n.label}
           </Link>

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
 import { photos } from "@/data/photos";
+import { styling } from "@/data/site";
 
 // Top image (fixed)
 const heroImage = "/photos/graphic/graphic-003.jpg";
@@ -36,6 +37,19 @@ export default function Home() {
             </span>
           </Link>
         ))}
+      </section>
+
+      <section className="sister">
+        <a href={styling.href} target="_blank" rel="noopener" className="sister-card rv">
+          <span className="sister-img">
+            <img src="/promo-styling.jpg" alt="Product styling by Maki Hayashi" loading="lazy" />
+          </span>
+          <span className="sister-text">
+            <span className="sister-kicker">Also by Maki Hayashi</span>
+            <span className="sister-title">Product Styling</span>
+            <span className="sister-link">makistyling.com ↗</span>
+          </span>
+        </a>
       </section>
     </>
   );
